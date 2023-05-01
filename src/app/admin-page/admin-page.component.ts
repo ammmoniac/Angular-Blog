@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-page.component.css']
 })
 export class AdminPageComponent {
-
+  links = [
+    {
+      name: 'Menus',
+      link: 'menus'
+    },
+    {
+      name: 'Posts',
+      link: 'posts'
+    },
+  ];
 }
