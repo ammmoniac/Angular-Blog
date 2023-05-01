@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'login', component: LoginPageComponent},
   {path: 'article', component: PagesListComponent, canActivate: [SubscriberGuard]},
-  {path: 'admin', component: AdminPageComponent, canActivate: [AdminGuard]},
+  {path: 'admin', loadChildren: () => import('./admin-page/admin-page.module').then(x => x.AdminPageModule), canActivate: [AdminGuard]},
 ];
 
 @NgModule({
