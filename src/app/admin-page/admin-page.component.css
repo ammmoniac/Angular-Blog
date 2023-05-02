@@ -9,3 +9,7 @@
 .example-sidenav {
   padding: 20px;
 }
+.links {
+  text-decoration: none;
+  color: black;
+}
