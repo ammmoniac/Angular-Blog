@@ -8,6 +8,8 @@ import { AppNavbarComponent } from "./app-navbar/app-navbar.component";
 import { MenusComponent } from './menus/menus.component';
 import { PostsComponent } from './posts/posts.component';
 import { FormsModule } from "@angular/forms";
+import { ConfirmadionDialogComponent } from './shared/confirmadion-dialog/confirmadion-dialog.component';
+import { EditMenuComponent } from './menus/edit-menu/edit-menu.component';
 
 @NgModule({
   imports: [
@@ -21,7 +23,10 @@ import { FormsModule } from "@angular/forms";
     AdminPageComponent,
     AppNavbarComponent,
     MenusComponent,
-    PostsComponent
-  ]
+    PostsComponent,
+    ConfirmadionDialogComponent,
+    EditMenuComponent
+  ],
+  entryComponents: [ConfirmadionDialogComponent, EditMenuComponent]
 })
 export class AdminPageModule { }
