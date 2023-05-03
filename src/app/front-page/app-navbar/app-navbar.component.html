@@ -3,9 +3,9 @@
     <button mat-button routerLink="/">Angular CMS</button>
     <span class="example-spacer"></span>
     <div *ngFor="let menu of menusList">
-      <button mat-button routerLink="/pages/{{menu.url}}">{{menu.title}}</button>
+      <button mat-button routerLink="/home/pages/{{menu.url}}">{{menu.title}}</button>
     </div>
-    <button mat-button routerLink="/article">Articles</button>
+    <button mat-button routerLink="/home/article">Articles</button>
     <div *ngIf="!user">
       <button mat-button (click)="AfService.loginWithGoogle()">Login</button>
     </div>
