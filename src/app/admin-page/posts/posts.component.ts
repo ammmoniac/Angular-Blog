@@ -3,11 +3,11 @@ import {PostsService, Post} from "../../service/posts/posts.service";
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from "@angular/material/paginator";
-import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ConfirmadionDialogComponent } from "../shared/confirmadion-dialog/confirmadion-dialog.component";
 import { EditPostComponent } from "./edit-post/edit-post.component";
 import { MenusService } from "../../service/menus/menus.service";
-import { FormControl, FormGroup, Validators, FormBuilder } from "@angular/forms";
+import { FormGroup, Validators, FormBuilder } from "@angular/forms";
 
 @Component({
   selector: 'app-posts',
