@@ -52,6 +52,7 @@ export class PostsComponent implements OnInit{
   }
   addPost() {
     this.posts.addPost(this.postForm.value);
+    this.postForm.reset();
   }
 
   applyFilter(e: Event) {

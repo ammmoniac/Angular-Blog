@@ -37,6 +37,8 @@ export class MenusComponent implements OnInit{
   }
   addMenu() {
     this.menus.addMenu(this.menuDetails);
+    this.menuDetails.title = '';
+    this.menuDetails.url = '';
   }
 
   applyFilter(e: Event) {
