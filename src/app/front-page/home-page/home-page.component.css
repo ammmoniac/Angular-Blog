@@ -1,0 +1,5 @@
+.center-ul {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
